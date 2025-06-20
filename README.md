@@ -14,6 +14,7 @@ This project simulates and analyzes customer support requests using machine lear
 - Forecast request volume using `Prophet`
 - Create PDF reports with `matplotlib` and `FPDF`
 - Send reports automatically via Telegram bot every Monday
+![image](https://github.com/user-attachments/assets/53c5fbc2-397c-480d-87e2-c18ea477d84c)
 
 ---
 
@@ -58,6 +59,13 @@ This project simulates and analyzes customer support requests using machine lear
 Use /report command to receive the latest PDF report
 
 Sends the report automatically every Monday at 10:00 AM
+
+## 📄 Example PDF Report
+
+This is a sample of the automatically generated weekly report.
+![image](https://github.com/user-attachments/assets/542b8e80-6d15-45a7-9cf5-b65151dc8e0b)
+
+
 
 👤 Author
 Nika Kalinnikova
