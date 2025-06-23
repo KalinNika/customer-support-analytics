@@ -32,6 +32,8 @@ This project analyzes customer support requests using classical machine learning
 - `send_report_bot.py` — Telegram bot logic
 - `ai_module/` — GPT/LLM integration module 🔥
 
+---
+
 ## 🔍 AI Integration (`ai_module/`)
 
 The `ai_module` folder contains GPT-based enhancements to the traditional pipeline:
@@ -73,23 +75,39 @@ Explore full details in [`ai_module/README.md`](https://github.com/KalinNika/cus
 │ └── weekly_report.pdf
 ├── requirements.txt
 └── README.md
+
+---
+
 ## ✅ How to Run
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/your-username/customer-support-analytics.git
-   cd customer-support-analytics
-2. **Create and activate virtual environment**  
-   ```bash
-   python -m venv .venv
-   .\.venv\Scripts\activate
-3. pip install -r requirements.txt
-4. jupyter notebook
+1. **Clone the repository**
 
-🤖 Telegram Bot
+2. Create and activate a virtual environment
+
+For Windows:
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+```
+
+For macOS/Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the Jupyter notebook
+
+---
+
+## 🤖 Telegram Bot
 Use /report command to receive the latest PDF report
 
 Sends the report automatically every Monday at 10:00 AM
+
+---
 
 ## 📄 Example PDF Report
 
@@ -97,8 +115,10 @@ This is a sample of the automatically generated weekly report.
 ![image](https://github.com/user-attachments/assets/542b8e80-6d15-45a7-9cf5-b65151dc8e0b)
 
 
-👤 Author
+# 👤 Author
+
 Nika Kalinnikova
-Junior Business & System Analyst · Python · SQL · R · Forecasting · Automation
+
+Junior Business, Data & System Analyst | Python · SQL · R · BI · ML · AI Automation
 
 
