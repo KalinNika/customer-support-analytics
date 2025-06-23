@@ -25,6 +25,11 @@ This project simulates and analyzes customer support requests using machine lear
 - prophet · faker · fpdf  
 - pyTelegramBotAPI · schedule · threading
 
+
+## 🔍 AI Module Integration
+
+See [`ai_module/`](./ai_module) for GPT-based enhancement of classification and reporting logic.
+
 ---
 
 ## 🗂️ Project Structure
@@ -64,7 +69,6 @@ Sends the report automatically every Monday at 10:00 AM
 
 This is a sample of the automatically generated weekly report.
 ![image](https://github.com/user-attachments/assets/542b8e80-6d15-45a7-9cf5-b65151dc8e0b)
-
 
 
 👤 Author
