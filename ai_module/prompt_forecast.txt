@@ -1,0 +1,17 @@
+import openai
+import os
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+def classify_request(text):
+    prompt = f"You are a customer support classifier.\nClassify the request: {text}\nCategory:"
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You classify customer requests into categories like 'payment', 'delivery', 'return', 'question', 'support', 'bug'."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.3,
+        max_tokens=10
+    )
+    return response['choices'][0]['message']['content'].strip()
