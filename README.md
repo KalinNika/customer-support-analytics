@@ -2,33 +2,59 @@
 
 **End-to-end NLP & forecasting pipeline with Telegram automation**
 
-This project simulates and analyzes customer support requests using machine learning and time series forecasting.
+This project analyzes customer support requests using classical machine learning tools, enhanced with GPT-based AI models (see [`ai_module/`](./ai_module)).
 
 ---
 
 ## 🚀 Features
 
-- Generate realistic support messages using `Faker`
-- Preprocess and vectorize text via `TF-IDF`
-- Classify requests using `Naive Bayes`
-- Forecast request volume using `Prophet`
-- Create PDF reports with `matplotlib` and `FPDF`
-- Send reports automatically via Telegram bot every Monday
+- 📬 Generate realistic support messages using `Faker`
+- 🧹 Clean and vectorize text data with `TF-IDF`
+- 📊 Classify request topics using `Naive Bayes`
+- 📈 Forecast daily request volume with `Prophet`
+- 📄 Create weekly PDF reports with `matplotlib` and `FPDF`
+- 🤖 Automate report delivery via Telegram bot (scheduled every Monday)
+- 🧠 Enhance analytics with LLMs (GPT) for:
+  - Topic classification via prompt engineering
+  - Time series summarization
+  - Natural language insights and reporting
+
 ![image](https://github.com/user-attachments/assets/53c5fbc2-397c-480d-87e2-c18ea477d84c)
+
+---
+
+## 📁 Project Structure
+
+- `generate_data.py` — generates synthetic dataset
+- `preprocessing.ipynb` — cleans text and trains classifier
+- `forecasting.ipynb` — creates request forecast
+- `generate_report.py` — builds the weekly PDF report
+- `send_report_bot.py` — Telegram bot logic
+- `ai_module/` — GPT/LLM integration module 🔥
+
+## 🔍 AI Integration (`ai_module/`)
+
+The `ai_module` folder contains GPT-based enhancements to the traditional pipeline:
+
+- 🔤 Prompt-based classification, forecasting, and summarization
+- ⚙️ Custom LLM configurations via `llm_config.json`
+- 📊 Comparison of different LLMs (e.g., GPT-4, Claude, Gemini)
+- 📄 AI-generated output sample ([Weekly Report](https://github.com/KalinNika/customer-support-analytics/blob/main/weekly_report.pdf))
+
+Explore full details in [`ai_module/README.md`](https://github.com/KalinNika/customer-support-analytics/blob/main/ai_module/README.md)
 
 ---
 
 ## 🧠 Tech Stack
 
-- Python 3.12  
-- pandas · scikit-learn · matplotlib  
-- prophet · faker · fpdf  
-- pyTelegramBotAPI · schedule · threading
+- **Languages & Environment**: Python 3.12, Jupyter Notebook
+- **Data Processing & ML**: pandas, scikit-learn, Prophet
+- **Visualization & Reporting**: matplotlib, FPDF
+- **Synthetic Data Generation**: Faker
+- **Automation & Scheduling**: schedule, threading
+- **Telegram Integration**: pyTelegramBotAPI
+- **AI & LLM Integration**: OpenAI API (GPT)
 
-
-## 🔍 AI Module Integration
-
-See [`ai_module/`](./ai_module) for GPT-based enhancement of classification and reporting logic.
 
 ---
 
